@@ -1,0 +1,81 @@
+Practice Steps with commands
+
+Fork the project
+Open the command line and navigate to the desktop
+	cd desktop
+
+Then clone the forked project
+	-> we forked and clone our own project to be able to make changes in it
+
+	git clone url
+
+Open the project in IntelliJ
+
+Make a local develop branch
+
+	git branch develop
+
+Set the upstream branch
+
+	git branch -u origin/develop
+
+	If you see branch doesn't exist
+	-> if we didn't have a develop branch on the remote, we had to make one first
+	-> if it was not updated, just made a new branch, then we can fetch to force an update and this allowed us to set the upstream
+
+Created your own branch(name, feat, test, user story)
+
+	git branch name
+
+Make changes in a file
+
+	check the status of the files  -> can be run anytime to check the progress/changes in the local repository. Not mandatory for other steps to work
+		git status
+
+Stage the file: selecting which files will be commit
+
+	git add .
+		-> this will stage ALL the files that have new changes
+
+	git add fileName
+		-> verify your location in the command line
+
+Commit the changes
+
+	git commit -m "message here"
+
+Push the changes to a new remote branch
+
+	git push -u origin name
+
+	in the future we can write just: git push
+		we can do just this command because there is a remote branch with the name and they are connected
+
+Make pull request to develop branch
+
+	=== finished upstream flow
+
+Make a change directly on github in the develop branch
+
+checkout to local develop
+
+	git checkout develop
+
+	fetch - optional
+
+pull changes to update our local develop
+
+	git pull
+		-> connected to the upstream, so we can do just git pull, instead of: git pull origin/develop
+
+update our local name/feat branch
+
+	git checkout name
+	git merge develop
+
+	=== finished downstream flow
+
+__________________________________________________________________
+
+
+
