@@ -6,4 +6,8 @@ public class HomePageTests {
 
     // testing search bar
 
+    // testing links
+
+    // testing db information
+
 }
